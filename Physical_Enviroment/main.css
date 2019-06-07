@@ -1,0 +1,48 @@
+html, body {
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Showcase */
+
+.showcase {
+    background: url(./Images/Recreation-4.jpg);
+    width: 100%;
+    height: auto;
+    background-position: center;
+    min-height: 500px;
+    margin-bottom: -50px;
+}
+
+.showcase h3 {
+    margin-top: 0;
+    padding-top: 200px;
+    font-size: 60px;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+/* Text */
+.text {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.text .g {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column-gap: 20px;
+}
+
+.text .g img {
+    width: 90%;
+    padding-top: 20px;
+    margin: auto;
+    transition-duration: 0.5s;
+}
