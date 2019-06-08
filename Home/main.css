@@ -14,6 +14,10 @@ html, body {
     margin-bottom: 15px;
 }
 
+.showcase video {
+    z-index: -1;   
+}
+
 .showcase div {
     width: 45%;
     float: right;
