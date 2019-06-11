@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="./main.css">
+
+    <title>Nova Parks</title>
+</head>
+<body>
+    <header id="home">
+        <a href="#locations">
+            <h1>Nova Parks</h1>
+            <p style="font-style: italic">Where Dreams Are Made</p>
+        </a>
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="#main">Main Attraction</a>
+            </li>
+            <li>
+                <a href="#locations">Locations</a>
+            </li>
+            <li>
+                <a href="#staff">Staff</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section id="main">
+        <h1>Main Attraction</h1>
+        <div class="grid1">
+            <div>
+                <h3>Info on the ride</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae soluta dolores quo at tenetur temporibus reiciendis ipsam eligendi sequi non, debitis natus repellendus qui assumenda?</p>
+            </div>
+            <img src="./Images/Ride-1.jpg">
+        </div>
+        <div class="grid2">
+            <img src="./Images/Ride-3.JPG">
+            <div>
+                <h3>Report</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae soluta dolores quo at tenetur temporibus reiciendis ipsam eligendi sequi non, debitis natus repellendus qui assumenda?</p>
+            </div>
+        </div>
+    </section>
+    <section id="locations">
+        <h1>Locations</h1>
+        <div class="grid3">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae soluta dolores quo at tenetur temporibus reiciendis ipsam eligendi sequi non, debitis natus repellendus qui assumenda?</p>
+                </div>
+                <div id="map"></div>
+            </div>
+    </section>
+    <section id="staff">
+        <h1>Staff</h1>
+        <div class="grid">
+            <div class="person">
+                <img src="./Images/Ride-3.JPG" alt="person">
+                <h3>Robert</h3>
+                <p class="role">Role: Engineer + Lead Designer</p>
+                <p>"So long and thanks for all the fish"</p>
+            </div>
+            <div class="person">
+                <img src="./Images/Ride-3.JPG" alt="person">
+                <h3>Swarnava</h3>
+                <p class="role">Role: Lead Engineer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, earum. Unde accusamus recusandae doloribus sunt!</p>
+            </div>
+            <div class="person">
+                <img src="./Images/Ride-3.JPG" alt="person">
+                <h3>Daisy</h3>
+                <p class="role">Role: Engineer + Designer</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, earum. Unde accusamus recusandae doloribus sunt!</p>
+            </div>
+            <div class="person">
+                <img src="./Images/Ride-3.JPG" alt="person">
+                <h3>Anna</h3>
+                <p class="role">Role: Engineer + Reporter</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, earum. Unde accusamus recusandae doloribus sunt!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Copyright &copy; Nova Studios 2019</p>
+    </footer>
+
+    <script>
+            // Initialize and add the map
+            function initMap() {
+              // The location
+              var wonderLand = {lat: 43.843118, lng: -79.539448};
+              // The map, centered at WonderLand
+              var map = new google.maps.Map(
+                  document.getElementById('map'), {zoom: 4, center: wonderLand});
+              // The marker, positioned at WonderLand
+              var marker = new google.maps.Marker({position: wonderLand, map: map});
+            }
+        </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_yTZyhAhnf0ABgR6PzSOeTsEnyib9wOs&callback=initMap">
+        </script>
+</body>
+</html>
