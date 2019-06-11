@@ -30,9 +30,22 @@ header a {
     color: #111111;
 }
 
+header div {
+    width: 450px;
+    margin: auto;
+}
+
 header h1 {
     font-size: 55px;
     margin-bottom: 0;
+    float: left;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    float: right;
+    padding-top: 10px;
 }
 
 header p {
