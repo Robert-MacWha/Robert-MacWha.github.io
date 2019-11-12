@@ -1,0 +1,105 @@
+/* Title */
+.title {
+    display: none;
+    text-align: center;
+    margin-bottom: -40px;
+}
+
+/* Table */
+.table {
+    width: min-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    
+    display: none;
+}
+
+.table .row {
+    margin-bottom: 6px;
+
+    display: grid;
+    /* 18 columns */
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-column-gap: 6px;
+}
+
+.table .g {
+    margin-bottom: 20px;
+}
+
+.table .row a:not(.item) {
+    border: #222222 3px solid;
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    text-decoration: none;
+}
+
+.table .row p {
+    font-size: 1em;
+    margin: 0;
+    color: #111111;
+    text-decoration: none;
+}
+
+.table .row a p:first-child {
+    padding-top: 5px;
+}
+
+/* Colors */
+.item1 {
+    background-color: #ffffff;
+}
+
+.item2, .item10, .item18, .item36, .item54, .item86, .item118 {
+    background-color: lightblue;
+} 
+
+.item9, .item17, .item35, .item53, .item85, .item117 {
+    background-color: palevioletred;
+}
+
+.item6, .item7, .item8, .item15, .item16, .item34 {
+    background-color: darkcyan;
+}
+
+.item5, .item14, .item32, .item33, .item51, .item52, .item84 {
+    background-color: rgb(243, 199, 117);
+}
+
+.item13, .item31, .item49, .item50, .item81, .item82, .item83, .item113, .item114, .item115, .item116 {
+    background-color: silver;
+}
+
+.item21, .item22, .item23, .item24, .item25, .item26, .item27, .item28, .item29, .item30 {
+    background-color: orange;
+}
+
+.item39, .item40, .item41, .item42, .item43, .item44, .item45, .item46, .item47, .item48 {
+    background-color: orange;
+}
+
+.item72, .item73, .item74, .item75, .item76, .item77, .item78, .item79, .item80 {
+    background-color: orange;
+}
+
+.item104, .item105, .item106, .item107, .item108, .item109, .item110, .item111, .item112, .item112 {
+    background-color: orange;
+}
+
+.item4, .item12, .item20, .item38, .item56, .item88 {
+    background-color: rgb(106, 196, 106);
+}
+
+.item3, .item11, .item19, .item37, .item55, .item87 {
+    background-color: yellow;
+}
+
+.item57, .item58, .item59, .item60, .item61, .item62, .item63, .item64, .item65, .item66, .item67, .item68, .item69, .item70, .item71 {
+    background-color: green;
+}
+
+.item89, .item90, .item91, .item92, .item93, .item94, .item95, .item96, .item97, .item98, .item99, .item100, .item101, .item102, .item103 {
+    background-color: darkgreen;
+}

@@ -4,11 +4,147 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>TempPage.exf</title>
+    <title>Robert MacWha | Home</title>
+
+    <link rel="stylesheet" type="text/css" href="./Css/statics.css">
+    <link rel="stylesheet" type="text/css" href="./Css/hover.css">
+
+    <link rel="stylesheet" type="text/css" href="./Css/index.css">
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="./Js/jquery-3.4.1.js"></script>
+    <script src="./Js/index.js"></script>
 </head>
 <body>
-    <a href="./Geo Website/Home/home.html">Blackburn Hamlet Geography Website</a> <br><br>
-    <a href="./Tech Website/main.html">Nova Parks (Tech Amusement Park)</a> <br><br>
-    <a href="./Nova Studios/LandingPage/landing-page.html">Nova Studios (Tech Website Project)</a> <br><br>
+    <header>
+        <nav>
+            <a href="./index.html" class="hvr-underline-from-center">HOME</a>
+            <a href="#" class="hvr-underline-from-center">ABOUT ME</a>
+            <a href="./Html/projects.html" class="hvr-underline-from-center">PORTFOLIO / PROJECTS</a>
+        </nav>
+    </header>
+    <section class="showcase">
+        <div id="particles-js"></div>
+        <div class="main">
+            <img src="./Images/Vertical-Bar.png">
+            <h1>Hello, I'm<br>Robert MacWha</h1>
+            <p>15-year old tech innovator, Ottawa, Canada</p>
+        </div>
+
+        <a href="#content" id="scroll_link">
+            <i class='far fa-arrow-alt-circle-down hvr-hang'></i>
+        </a>
+    </section>
+    <section class="content" id="content">
+        <div class="about">
+            <div class="text">
+                <h3>About Me</h3>
+                <p class="main">Hi! I'm Robert, a aspiring computer scientist interesting in <span class="bold">AI, digital design and much more.</span></p>
+
+                <p>Currently I'm in tenth grade at <span class="bold">Colonel By Secondary School</span> and working on learning about different kinds of <span class="bold">neural networks and application for artificial intelligence.</span></p>
+                
+                <p>My goal is to forward the field of <span class="bold">artificial intelligence </span>and use it to help solve many of the problems humans are currently facing.</p>
+
+                <p>I've been working on many different projects, somtimes to <span class="bold">gain new experiences</span> but often just because I found an interesting problem or mathimatical principal and wanted to explore its effects.</p>
+
+                <p>Go look at my Python projects if your interested in AI or my Javascript ones for some mini projects I've created for fun.</p>
+
+                <a href="https://github.com/Trebborr" target=”_blank” class="hvr-forward hvr-underline-from-left">VISIT MY GITHUB</a>
+            </div>
+            <img src="https://www.birds.cornell.edu/home/wp-content/uploads/2019/05/IBunting-Kinderman-58737651-FI.gif">
+        </div>
+        <div class="projects">
+            <div class="python">
+                <h1>Python</h1>
+                <div class="container">
+                    <div class="flip-card hvr-float">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/Q-Climber.png">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Q-Climbers</h3>
+                                <p>An algorithm that uses Q-learning to climb a mountain in one of OpenAi Gym’s environments</p>
+                                <a href="#" class="hvr-underline-from-center hvr-grow">PROJECT LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card hvr-float">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/Temp-Image.jpg">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Pet Classifier</h3>
+                                <p>A neural network built with Keras that can classify dogs and cats</p>
+                                <a href="#" class="hvr-underline-from-center hvr-grow">PROJECT LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card hvr-float">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/Temp-Image.jpg">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Pokemon GAN</h3>
+                                <p>A GAN built using Keras that creates realistic(ish) pokemon from random noise</p>
+                                <a href="#" class="hvr-underline-from-center hvr-grow">PROJECT LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="javascript">
+                <h1>Javascript</h1>
+                <div class="container">
+                    <div class="flip-card hvr-float">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/Boids.png">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Boids</h3>
+                                <p>A simple little program that simulates flocking behaviors like those found in birds and insects</p>
+                                <a href="#" class="hvr-underline-from-center hvr-grow">PROJECT LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card hvr-float">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/Non-Linear-Regression.png">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Non-Linear Regression</h3>
+                                <p>An algorithm built with tensorflow.js that can create lines of best fit for non-linear data</p>
+                                <a href="#" class="hvr-underline-from-center hvr-grow">PROJECT LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flip-card hvr-float">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Images/Racecars.png">
+                            </div>
+                            <div class="flip-card-back">
+                                <h3>Tensorflow Racecars</h3>
+                                <p>A program built with tensorflow that uses a genetic algorithm to create race cars that can go around a racetrack</p>
+                                <a href="#" class="hvr-underline-from-center hvr-grow">PROJECT LINK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="grid">
+            <p>Copyright &copy; Robert MacWha 2019</p>
+            <p class="highlight">trebor.ahwcam@gmail.com</p>
+        </div>
+    </footer>
 </body>
 </html>
