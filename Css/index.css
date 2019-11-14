@@ -3,6 +3,11 @@
     display: none;
 }
 
+/* Header */
+header {
+    background-color: #11111180;
+}
+
 /* Showcase */
 .showcase {
     background: #000000;
