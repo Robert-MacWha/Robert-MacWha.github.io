@@ -3,6 +3,8 @@
     width: 250px;
     height: 250px;
     perspective: 1000px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .flip-card-inner {
@@ -42,7 +44,7 @@
     text-align: center;
 
     margin-top: 25px;
-    margin-bottom: -75px;
+    margin-bottom: -150px;
 
     overflow: hidden;
 }
