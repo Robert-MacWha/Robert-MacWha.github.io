@@ -10,6 +10,8 @@
     margin: auto;
     margin-top: 50px;
     margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #444444;
     
     display: none;
 }

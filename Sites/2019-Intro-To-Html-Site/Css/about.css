@@ -1,5 +1,8 @@
 .title {
-    
+    color: #222222;
+    text-align: center;
+    margin-top: 25px;
+    overflow: hidden;
 }
 
 /* Text */
