@@ -41,12 +41,7 @@
 
 /* Css */
 .title {
-    text-align: center;
-
-    margin-top: 25px;
     margin-bottom: -150px;
-
-    overflow: hidden;
 }
 
 .external {

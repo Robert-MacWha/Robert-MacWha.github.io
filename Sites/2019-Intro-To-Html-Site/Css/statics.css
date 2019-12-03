@@ -13,7 +13,14 @@ html, body {
 }
 
 .title {
-    color: #222222;
+    color: #555555;
+    text-align: center;
+
+    margin: auto;
+    margin-top: 25px;
+    width: fit-content;
+    height: min-content;
+    padding: 0 5px;
 }
 
 /* Header */
@@ -32,7 +39,7 @@ header .logo {
 
     display: grid;
     grid-template-columns: 50px 200px;
-    color: #384c5c;
+    color: #555555;
 }
 
 header .logo img {

@@ -1,8 +1,17 @@
 /* Text */
+.title {
+    margin-bottom: -18px;
+}
+
 .info {
     width: 1000px;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 50px;
+    color: #444444;
+}
+
+.info b, .info i {
     color: #333333;
 }
 
