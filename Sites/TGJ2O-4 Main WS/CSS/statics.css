@@ -1,0 +1,76 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+    font-family:sans-serif;
+    color: #000000;
+    background: #ffffff;
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+header nav {
+    z-index: 1;
+    position: absolute;
+
+    top: 8px;
+    left: calc(100vw - 430px);
+
+    font-family: Noir;
+}
+
+header a {
+    margin: 10px;
+    padding-bottom: 2px;
+
+    color: #272727cc;
+    text-decoration: none;
+}
+
+footer {
+    height: 200px;
+    background: #272727;
+    color: #ffffff;
+}
+
+footer p {
+    margin: auto;
+    width: max-content;
+    padding-top: 85px;
+
+    font-size: 2em;
+}
+
+/* Universal classes */
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+b {
+    color: #777777;
+}
+
+/* Fonts */
+@font-face {
+    font-family: Noir;
+    src: url(../Fonts/Noir/Noir_regular.otf);
+}
+
+@font-face {
+    font-family: Noir_Bold;
+    src: url(../Fonts/Noir/Noir_medium.otf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Cubic;
+    src: url(../Fonts/Cubic/cubic.ttf);
+}
