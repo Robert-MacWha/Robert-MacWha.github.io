@@ -4,16 +4,10 @@ html, body {
     width: 100%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-
-    font-family:sans-serif;
-    color: #000000;
-    background: #ffffff;
-    font-size: 1em;
-    font-weight: lighter;
 }
 
 header nav {
-    z-index: 1;
+    z-index: 2;
     position: absolute;
 
     top: 8px;
@@ -30,6 +24,37 @@ header a {
     text-decoration: none;
 }
 
+/* Showcase */
+.showcase {
+    z-index: 3;
+}
+
+.showcase h1 {
+    position: absolute;
+    z-index: 3;
+    margin: 0;
+    top: 22vh;
+    left: 7%;
+    width: max-content;
+
+    color: #272727;
+    font-family: Noir_Bold;
+    font-size: 3.5em;
+}
+
+.showcase p {
+    position: absolute;
+    z-index: 3;
+    width: 300px;
+    left: 7%;
+
+    font-size: 1.25em;
+    line-height: 1.25em;
+
+    font-family: Noir;
+}
+
+/* Footer */
 footer {
     height: 200px;
     background: #272727;
@@ -54,8 +79,57 @@ footer p {
     user-select: none;
 }
 
-b {
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 3s;
+    width: 80%;
+    margin: auto;
+    margin-top: 0;
+
+    border-radius: 10px;
+    color: #272727;
+    text-decoration: none;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card img {
+    width: 100%;
+    font-size: 2.5em;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    border-bottom: #0093bc77 5px solid;
+}
+
+.card h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    font-family: Noir;
+}
+
+.card p {
+    margin-top: 0;
+
+    font-family: Noir;
     color: #777777;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+b {
+    color: #666666;
+}
+
+i {
+    color: #666666;
+    font-style: italic;
 }
 
 /* Fonts */
@@ -67,7 +141,7 @@ b {
 @font-face {
     font-family: Noir_Bold;
     src: url(../Fonts/Noir/Noir_medium.otf);
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 @font-face {
