@@ -11,7 +11,8 @@
     <link rel="stylesheet" type="text/css" href="../CSS/hover.css">
 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="../JS/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.0.0/dist/tf.min.js"></script>
+    <script src="../JS/Libraries/p5.js"></script>
 </head>
 <body>
     <header class="unselectable">
@@ -30,21 +31,19 @@
             <p>A high-level general-purpose <b>programing language</b></p>
         </div>
 
-        <video autoplay muted loop id="video">
-            <source src="../IMGs/compiled_video.mp4" type="video/mp4">
-        </video>
+        <iframe src="https://editor.p5js.org/rmacw1@ocdsb.ca/embed/ERY0bXSrF"></iframe>
     </section>
 
     <section class="examples">
         <div class="recent">
             <div class="left">
-                <h3>Lorenz Attractor</h3>
-                <p>The Lorenz attractor is an attractor that arises in a simplified system of equations describing the two-dimensional flow of fluid of uniform depth, with an imposed temperature difference, under gravity, with buoyancy, thermal diffusivity, and kinematic viscosity.</p>
-                <a href="https://editor.p5js.org/rmacw1@ocdsb.ca/present/iDDoUvi0N" class="hvr-forward hvr-underline-from-left">Project Link</a>
+                <h3>CAPTCHA solving AI</h3>
+                <p>This project contains a keras model that can train on and learn how to solve CAPTCHAs (original) with a high degree of accuracy within a small number of generations.  It uses keras with a tensorflow backend (made by google) and is a simple convolutional classification model.</p>
+                <a href="https://www.kaggle.com/treborahwcam/captcha-solver" class="hvr-forward hvr-underline-from-left">Project Link</a>
             </div>
             <div></div>
             <div class="right">
-                <img class="hvr-grow" src="../IMGs/Lorenz Attractor.png">
+                <img class="hvr-grow" src="../IMGs/Captcha Project Icon.png">
             </div>
             <div></div>
         </div>
@@ -97,10 +96,5 @@
             </div>
         </div>
     </section>
-
-    <script src="../JS/javascript.js"></script>
-
-    <script src="../JS/Boids/boid.js"></script>
-    <script src="../JS/Boids/sketch.js"></script>
 </body>
 </html>

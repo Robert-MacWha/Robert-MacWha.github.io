@@ -1,4 +1,8 @@
 /* Showcase */
+.showcase {
+    height: 100vh;
+}
+
 .showcase p {
     top: calc(22vh + 50px);
 

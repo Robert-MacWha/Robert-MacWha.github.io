@@ -8,6 +8,27 @@
     top: calc(22vh + 50px);
 }
 
+.showcase iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    border: hidden;
+    overflow: hidden;
+}
+
+.showcase iframe canvas {
+    overflow: hidden;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 /* Examples */
 .examples {
     width: 1000px;
