@@ -11,7 +11,7 @@ header nav {
     position: absolute;
 
     top: 8px;
-    left: calc(100vw - 430px);
+    left: calc(100vw - 250px);
 
     font-family: Noir;
 }

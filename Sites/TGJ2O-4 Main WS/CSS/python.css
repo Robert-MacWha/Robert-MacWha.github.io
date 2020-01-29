@@ -6,6 +6,8 @@
 
 .showcase p {
     top: calc(22vh + 50px);
+
+    color: #888888;
 }
 
 .showcase iframe {
