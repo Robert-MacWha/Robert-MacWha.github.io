@@ -1,0 +1,26 @@
+:root {
+    --dark-1: #314149;
+    --dark-2: #696969;
+    --light-1: #ffffff;
+    --highlight-1: #94d1fa;
+    --highlight-2: #5cace2;
+    --highlight-3: #2a7fb8;
+
+    --highlight-2-1: #add081;
+    --highlight-2-2: #bed782;
+
+    --font-1: 1em;
+    --font-2: 1.6em;
+    --font-3: 2em;
+    --font-4: 3em;
+    --font-5: 4em;
+
+    --line-height: 1.5; 
+    --letter-spacing: 0.06em;
+
+    --transition: 0.3s;
+
+    /*
+        Fonts: Helvetica
+    */
+}
