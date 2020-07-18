@@ -97,7 +97,7 @@
 
     .showcase .btns {
         margin: auto;
-        width: 50%;
+        width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
@@ -118,14 +118,6 @@
 }
 
 @media (max-width: 500px) {
-    .showcase .btns {
-        width: 90%;
-    }
-
-    .showcase .btn {
-        padding: 8px 20px;
-    }
-
     .codebase .grid {
         width: 90%;
     }
