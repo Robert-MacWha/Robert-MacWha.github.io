@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 /* Header */
 header {
     position: fixed;
@@ -257,8 +261,8 @@ header .main-header .navbar-toggler {
 }
 
 /* Footer */
-footer {
-    margin-top: 10px;
+body footer {
+    padding: 100px 0!important;
     background: var(--highlight-2);
 
     font-size: var(--font-1);
