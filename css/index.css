@@ -172,6 +172,9 @@ header .main-header .navbar-toggler {
 
 .features .col-lg-4 img {
     max-width: 250px;
+
+    margin-left: 50%;
+    transform: translate(-50%, 0);
 }
 
 .features .col-lg-4 h5 {
@@ -225,8 +228,10 @@ header .main-header .navbar-toggler {
     display: grid;
     grid-template-columns: 1fr 1fr;
 
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+
     width: 50%;
-    margin: auto;
 } 
 
 .codebase .btn {
@@ -249,4 +254,37 @@ header .main-header .navbar-toggler {
 .codebase img {
     height: var(--font-2);
     width: auto;
+}
+
+/* Footer */
+footer {
+    margin-top: 10px;
+    background: var(--highlight-2);
+
+    font-size: var(--font-1);
+    font-family: Helvetica;
+    color: var(--light-1);
+
+    letter-spacing: var(--letter-spacing);
+}
+
+footer a {
+    padding: 5px 15px;
+
+    font-size: var(--font-1);
+    font-family: Helvetica;
+    color: var(--light-1);
+
+    letter-spacing: var(--letter-spacing);
+
+    border-radius: 1000px;
+
+    transition: var(--transition);
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: var(--light-1);
+
+    background: var(--highlight-3);
 }
