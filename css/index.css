@@ -1,6 +1,10 @@
 html {
     scroll-behavior: smooth;
-  }
+}
+
+body {
+    width: 100%;
+}
 
 /* Header */
 header {
@@ -203,13 +207,14 @@ header .main-header .navbar-toggler {
     color: var(--dark-2);
 }
 
-/* Codebase */
-.codebase {
+/* Stats */
+.stats {
     padding: 50px 0;
+    width: 100%;
     background: var(--highlight-2);
 }
 
-.codebase .title {
+.stats .title {
     text-align: center;
 
     font-size: var(--font-4);
@@ -218,7 +223,7 @@ header .main-header .navbar-toggler {
     color: var(--light-1);
 }
 
-.codebase .subtitle {
+.stats .subtitle {
     text-align: center;
 
     font-size: var(--font-1);
@@ -228,12 +233,36 @@ header .main-header .navbar-toggler {
     letter-spacing: var(--letter-spacing);
 }
 
+/* Codebase */
+.codebase {
+    padding: 50px 0;
+}
+
+.codebase .title {
+    text-align: left;
+
+    font-size: var(--font-4);
+    font-weight: bold;
+    font-family: Helvetica;
+    color: var(--dark-1);
+}
+
+.codebase .subtitle {
+    text-align: left;
+
+    margin-bottom: 10px;
+    margin-right: 5px;
+
+    font-size: var(--font-1);
+    font-family: Helvetica;
+    color: var(--dark-1);
+
+    letter-spacing: var(--letter-spacing);
+}
+
 .codebase .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
-    margin-left: 50%;
-    transform: translate(-50%, 0);
 
     width: 50%;
 } 
@@ -245,7 +274,7 @@ header .main-header .navbar-toggler {
 
     font-size: var(--font-2);
     white-space: nowrap;
-    color: var(--light-1);
+    color: var(--dark-1);
 
     border-radius: 1000px;
 }
@@ -255,9 +284,19 @@ header .main-header .navbar-toggler {
     background: var(--highlight-3);
 }
 
-.codebase img {
+.codebase .icon {
     height: var(--font-2);
     width: auto;
+
+    -webkit-filter: brightness(0%);
+    filter: brightness(0%);
+
+    transition-duration: var(--transition);
+}
+
+.codebase .btn:hover img {
+    -webkit-filter: brightness(100%);
+    filter: brightness(100%);
 }
 
 /* Footer */

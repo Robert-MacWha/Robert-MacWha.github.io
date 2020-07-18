@@ -61,6 +61,23 @@
         margin-left: 50%;
         transform: translate(-50%, 0);
     }
+
+    .prediction-icon {
+        display: none;
+    }
+
+    .codebase .title {
+        text-align: center;
+    }
+
+    .codebase .subtitle {
+        text-align: center;
+    }
+
+    .codebase .grid {
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
 }
 
 @media (max-width: 800px) {
