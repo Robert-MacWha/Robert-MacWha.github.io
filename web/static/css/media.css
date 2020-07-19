@@ -66,6 +66,10 @@
         display: none;
     }
 
+    .codebase .col-lg-8 {
+        padding-top: 0;
+    }
+
     .codebase .title {
         text-align: center;
     }
@@ -120,5 +124,16 @@
 @media (max-width: 500px) {
     .codebase .grid {
         width: 90%;
+    }
+}
+
+/* Environment page */
+@media (max-width: 992px) {
+    .biome-selection .btn {
+        padding: 10px 100%;
+    }
+
+    .mode-selection .btn {
+        padding: 10px 100%;
     }
 }

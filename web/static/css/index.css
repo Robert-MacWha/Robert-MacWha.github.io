@@ -42,6 +42,10 @@ header .main-header .navbar-toggler {
     height: auto;
 }
 
+.main-header .page-info {
+    display: none;
+}
+
 .main-header .navbar-nav .nav-item {
     padding: 0 10px;
 }
@@ -84,19 +88,19 @@ header .main-header .navbar-toggler {
     height: fit-content;
 }
 
+.showcase .grid {
+    padding-top: 5%;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
 .showcase .icon {
     float: left;
     width: 150px;
     height: auto;
 
     margin-right: 20px;
-}
-
-.showcase .grid {
-    padding-top: 5%;
-
-    display: grid;
-    grid-template-columns: auto 1fr;
 }
 
 .showcase .title {
@@ -236,6 +240,10 @@ header .main-header .navbar-toggler {
 /* Codebase */
 .codebase {
     padding: 50px 0;
+}
+
+.codebase .col-lg-8 {
+    padding-top: 5%;
 }
 
 .codebase .title {
