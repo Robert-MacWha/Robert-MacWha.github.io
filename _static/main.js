@@ -84,7 +84,7 @@ let   sliderValues = [
 
 (async () => {
     // Load the encoder model
-    const encoderModel = await tf.loadLayersModel('./final/JS_decoder/model.json');
+    const encoderModel = await tf.loadLayersModel('../final/JS_decoder/model.json');
 
     // Wait for the document to load
     $(document).ready(() => {
