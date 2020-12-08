@@ -1,0 +1,18 @@
+@media (max-width: 991px) {
+    /* Change the number of sliders per column from two to four */
+    .slider {
+        width: calc(25% - calc(var(--slider-margin) * 2));
+    }
+
+    /* Remove the left border on content paragraphs */
+    .info .description.sidebar {
+        padding: 0;
+        border: 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .slider {
+        width: calc(50% - calc(var(--slider-margin) * 2));
+    }
+}
