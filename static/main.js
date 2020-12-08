@@ -8,7 +8,7 @@ let canvasSize = 0;
 
 // Load in the tensorflow model
 (async () => {
-    tf.loadLayersModel('./final/JS_decoder/model.json').then( m => {
+    tf.loadLayersModel('../final/JS_decoder/model.json').then( m => {
         encoderModel = m;
         updateCanvas();
     });
