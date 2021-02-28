@@ -1,0 +1,60 @@
+<!--Admin toolbar, only displayed for logged in users-->
+<style>
+    .admin-toolbar {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        width: fit-content;
+        height: min-content;
+
+        padding: 5px 10px;
+        background: var(--colors-dark-secondary);
+        box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+
+        z-index: 1000;
+    }
+
+    .admin-toolbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .admin-toolbar p {
+        float: left;
+        padding: 0 5px;
+        margin: 0 5px;
+
+        color: var(--colors-light-primary);
+        font-size: 1.2em;
+        letter-spacing: 0.05em;
+        line-height: 1.2em;
+    }
+
+    .admin-toolbar a {
+        float: left;
+        padding: 0 5px;
+        margin: 0 5px;
+
+        color: var(--colors-light-secondary);
+        font-size: 1.2em;
+        letter-spacing: 0.05em;
+        line-height: 1.2em;
+        border-bottom: var(--colors-dark-secondary) 3px solid;
+
+        transition-duration: var(--transition-duration);
+    }
+
+    .admin-toolbar a:hover {
+        border-bottom: var(--colors-highlight-primary) 3px solid;
+    }
+</style>
+
+<div class="admin-toolbar">
+    <ul>
+        <p>Admin Toolbar</p>
+        <a href="/portfolio/create">+ Project</a>
+
+    </ul>
+</div>

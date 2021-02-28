@@ -1,0 +1,148 @@
+/* START - Fullpage Elements */
+.fullpage-wrapper {
+    position: relative;
+    height: 100%;
+    touch-action: none;
+    top: 0px;
+}
+
+.title-card {
+    position: absolute;
+    top: 50%;
+    left: max(10%, 150px);
+    transform: translateY(-50%);
+
+    z-index: 100;
+}
+
+.title-card h1 {
+    color: #ffffff;
+    font-size: 9rem;
+    letter-spacing: 0.1em;
+    line-height: 95%;
+    text-transform: uppercase;
+    font-family: 'Futura_b', Helvetica, sans-serif;
+
+    user-select: none;
+}
+
+.title-card p {
+    margin: 40px 0;
+
+    color: #f4f4f4;
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+    font-family: 'Futura', Helvetica, sans-serif;
+
+    user-select: none;
+}
+
+.title-card .block span {
+    display: block;
+
+    width: 100px;
+    height: 5px;
+    border-radius: 5px;
+
+    margin: 20px 0;
+
+    background: var(--colors-highlight-secondary);
+}
+
+.title-card .btn {
+    padding: 18px 32px;
+    font-size: 1.8rem;
+}
+
+.showcase {
+    display: block;
+    position: absolute;
+
+    top: 12.5%;
+    right: 6%;
+
+    width: 50%;
+    height: 75%;
+
+    background: #000000;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+}
+
+.showcase img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* END - Fullpage elements */
+
+/* START - Parallax background elements */
+.parallax {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    z-index: -1;
+}
+
+.parallax img {
+    position: absolute;
+    bottom: -1%;
+    left: 0;
+    width: 102%;
+    height: auto;
+    min-height: 102%;
+
+    transform: translate(-1%, -1%);
+    object-fit: cover;
+    overflow: scroll;
+
+    transition: margin-bottom 1s ease-in-out;
+}
+
+/* END - Parallax background elements */
+
+/* START - Navigation sidebar */
+#fp-nav {
+    margin: 0;
+    -webkit-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+    width: 40px;
+    left: 40px;
+    overflow: hidden;
+}
+
+#fp-nav ul li {
+    height: 4px;
+    margin: 0 0 40px;
+}
+
+#fp-nav ul li a {
+    width: 24px;
+    height: 100%;
+    background: #fff;
+    -webkit-transition: var(--transition-duration);
+    -o-transition: var(--transition-duration);
+    transition: var(--transition-duration);
+}
+
+#fp-nav ul li a.active {
+    width: 40px;
+}
+
+#fp-nav ul li a span {
+    display: none;
+}
+
+#fp-nav ul li a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+
+/* END - Navigation sidebar */

@@ -1,0 +1,187 @@
+/* Variables */
+:root {
+    /* Colors */
+    --colors-light-primary: #ffffff;
+    --colors-light-secondary: #e5e5e5;
+
+    --colors-dark-primary: #111111;
+    --colors-dark-secondary: #333333;
+
+    --colors-highlight-primary:   rgb(128, 167, 50);
+    --colors-highlight-secondary: rgb(84, 109, 39);
+
+    /* Font Sizes */
+    --size-header: 4em;
+    --size-subheader: 1.5em;
+    --size-text: 1em;
+    --subsize-header: 3em;
+    --subsize-subheader: 1.5em;
+    --subsize-text: 1em;
+
+    --transition-duration: 0.3s;
+
+}
+
+/* START - Font families */
+@font-face {
+    font-family: 'Futura';
+    src:  url('/fonts/FuturaPTBook.otf') format('woff2'),
+          url('/fonts/FuturaPTBook.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'Futura_l';
+    src:  url('/fonts/FuturaPTLight.otf') format('woff2'),
+          url('/fonts/FuturaPTLight.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'Futura_b';
+    src:  url('/fonts/FuturaPTMedium.otf') format('woff2'),
+          url('/fonts/FuturaPTMedium.otf') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato';
+    src:  url('/fonts/Lato-Regular.ttf') format('woff2'),
+          url('/fonts/Lato-Regular.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato_l';
+    src:  url('/fonts/Lato-Thin.ttf') format('woff2'),
+          url('/fonts/Lato-Thin.ttf') format('woff');
+}
+
+@font-face {
+    font-family: 'Lato_b';
+    src:  url('/fonts/Lato-Bold.ttf') format('woff2'),
+          url('/fonts/Lato-Bold.ttf') format('woff');
+}
+
+/* END - Font families */
+
+/* START - Custom defaults */
+* {
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+}
+
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    min-height: 100%;
+    min-height: -webkit-fill-available;
+}
+
+.container {
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Futura';
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+h1 {
+    margin: 0;
+
+    color: var(--colors-dark-primary);
+    font-size: var(--size-header);
+}
+
+h3 {
+    margin: 0;
+
+    color: var(--colors-dark-primary);
+    font-size: var(--size-subheader);
+}
+
+p {
+    margin: 0;
+    
+    color: var(--colors-dark-secondary);
+    font-size: var(--size-text);
+}
+
+/* END - Custom defaults */
+
+/* START - Custom classes */
+.transition {
+    transition-duration: var(--transition-duration);
+}
+
+.btn {
+    color: #f4f4f4;
+    background-color: var(--colors-highlight-primary);
+    font-family: 'Futura_b', Helvetica, sans-serif;
+
+    border-radius: 50px;
+}
+
+.btn:hover {
+    color: #f4f4f4;
+    background-color: var(--colors-highlight-secondary);
+}
+
+.cover-container {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.cover-window {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.bg-dark {
+    background-color: var(--colors-light-secondary) !important;
+}
+
+.bg-light {
+    background-color: var(--colors-light-primary);
+}
+
+.admin-add {
+    position: fixed;
+    top: 0px;
+    right: 40px;
+
+    color: var(--colors-light-primary);
+    font-size: var(--size-header);
+    font-family: 'Futura';
+
+    z-index: 1000;
+
+    transition-duration: var(--transition-duration);
+}
+
+.w-min {
+    width: min-content;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.h-min {
+    height: min-content;
+}
+
+/* END - Custom classes */

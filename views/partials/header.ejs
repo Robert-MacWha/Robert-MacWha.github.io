@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Tutorial Website</title>
+
+    <link href="/bootstrap/dist/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+    <link href="/fullpage.js/dist/fullpage.min.css" type="text/css" rel="stylesheet">
+
+    <link href="/styles.css" type="text/css" rel="stylesheet">
+    <link href="/css/index.css" type="text/css" rel="stylesheet">
+    <link href="/css/responsive.css" type="text/css" rel="stylesheet">
+</head>
+<body class="preload">
+
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!--Only show the add project button if admin (also blocked in backend unless user has valid key)-->
+    <% if (admin) { %>
+        <%- include('toolbar.ejs') %>
+    <% } %>

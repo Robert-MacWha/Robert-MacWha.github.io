@@ -1,0 +1,132 @@
+<%- include('../partials/secondary-header.ejs') %>
+
+<!--START - Fullpage Header-->
+<header>
+
+    <img src="../images/Landscape-static.svg"class="background">
+    <div class="title-card">
+
+        <h1 class="left">Portfolio</h1>
+
+        <div class="block left">
+            <span></span>
+            <span style="margin-left: 50px;"></span>
+        </div>
+
+        <p>Recent projects</p>
+
+    </div>
+    <div class="showcase">
+        <% if (highlight != null) { %>
+
+            <img src="<%= highlight.image %>" alt="Cover image">
+
+        <% } else { %>
+
+            <img src="../images/undefined.jpg" alt="Cover image">
+
+        <% } %>
+    </div>
+
+</header>
+<!--END - Fullpage Header-->
+
+<!--START - Recent Project Showcase-->
+<% if (highlight != null) { %>
+    <div class="bg-light pt-5 pb-5">
+        <div class="container recent">
+            
+            <h1 class="mb-3"><%= highlight.title %></h1>
+            <div class="row">
+        
+                <div class="col-md-8 mb-3">
+
+                    <p class="mb-2">
+                        <%= highlight.content %>
+                    </p>
+                    <a href="<%= highlight.url %>" target="_blank">See more!</a>
+                    
+                </div>
+                <div class="col-md-4 mb-3">
+        
+                    <img src="<%= highlight.image %>" alt="Cover image">
+                
+                </div>
+        
+            </div>
+        
+        </div>
+    </div>
+<% } else { %>
+
+    <h3 class="error">Error - Portfolio not found</h3>
+
+<% } %>
+<!--END - Recent Project Showcase-->
+
+<!--START - Portfolio-->
+<% if (projects.length > 0) { %>
+    <div class="bg-dark">
+        <div class="container portfolio pt-5">
+
+            <h1>My Content</h1>
+            <div class="filters mt-4 mb-5">
+
+                <button class="btn active" onclick="filterSelection('all', this)">        <p>All</p> </button>
+                <button class="btn"        onclick="filterSelection('article', this)">    <p>Articles</p> </button>
+                <button class="btn"        onclick="filterSelection('video', this)">      <p>Videos</p> </button>
+                <button class="btn"        onclick="filterSelection('deck', this)">       <p>Decks</p> </button>
+                <button class="btn"        onclick="filterSelection('project', this)">    <p>Projects</p> </button>
+                <button class="btn"        onclick="filterSelection('newsletter', this)"> <p>Newsletters</p> </button>
+
+            </div>
+            <div class="_row pb-5">
+
+                <!--EJS is used to display each element in the portfolio array (passed from nodeJS backend)-->
+                <% for(let i = 0; i < projects.length; i ++) { %>
+
+                    <% const project = projects[i] %>
+                    <div class="column all <%= project.category %>">
+
+                        <div class="img-container">
+                            <img src="<%= project.image %>" alt="Cover image">
+                        </div>
+                        <div class="img-overlay">
+                            <div class="img-overlay-content">
+
+                                <div class="row">
+
+                                    <div class="col">
+                                        <a href="<%= project.url %>" target="_blank"><img src="images/icons/link.svg" alt="link"></a>
+                                    </div>
+                                    <% if (admin) { %>
+
+                                        <div class="col">
+                                            <a href="portfolio/<%= project.id %>"><img src="images/icons/edit.svg" alt="edit"></a>
+                                        </div>
+                                        <div class="col">
+                                            <a onclick="deleteProject('<%= project.id %>', '<%= project.title %>')"><img src="images/icons/delete.svg" alt="delete"></a>
+                                        </div>
+                                        
+                                    <% } %>
+
+                                </div>
+                                <h3 class="mt-3"><%= project.title %></h3>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+
+                <% } %>
+
+            </div>
+
+        </div>
+    </div>
+<% } %>
+<!--END - Portfolio-->
+<script src="../js/projects.js"></script>
+
+
+<%- include('../partials/footer.ejs') %>
