@@ -1,0 +1,255 @@
+/* Variables */
+html {
+  scroll-behavior: smooth;
+  font-size: 1.1em;
+}
+
+/* universal */
+* {
+  font-family: 'Lato', sans-serif;
+  color: #222222;
+}
+
+h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #444444;
+}
+
+p {
+  font-size: 1.1em;
+  color: #666666;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.btn {
+  background: #92a649;
+  color: #ffffff;
+  border: none;
+  border-radius: 0;
+  font-size: 1.2em;
+  font-weight: 600;
+  -webkit-transition-duration: 0.2s !important;
+          transition-duration: 0.2s !important;
+}
+
+.btn:before {
+  background-color: #6c7336;
+}
+
+.btn:hover {
+  color: #ffffff;
+}
+
+/* Header */
+nav {
+  position: -webkit-sticky !important;
+  position: sticky !important;
+  top: 0;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 5px #00000011;
+          box-shadow: 0px 0px 5px #00000011;
+  z-index: 100;
+}
+
+/* Showcase */
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #d5e7f2;
+  color: #ffffff;
+}
+
+.showcase .headline {
+  position: relative;
+  width: 70%;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.showcase .headline h2 {
+  font-size: 3em;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.showcase .headline h2 sub {
+  color: #ffffff;
+}
+
+.showcase .headline h4 {
+  color: #ffffff;
+}
+
+.showcase .headline h4 sub {
+  color: #ffffff;
+}
+
+.showcase #scene {
+  position: absolute;
+  top: 20%;
+  bottom: 0px;
+  left: -10%;
+  right: 0;
+  overflow: hidden;
+}
+
+.showcase #scene div {
+  top: 0px;
+  bottom: -10%;
+  left: -10%;
+  right: -10%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+/* Problem */
+.problem {
+  background: #ffffff;
+}
+
+.problem .card {
+  border: none;
+  -webkit-box-shadow: 0px 1px 5px #00000022;
+          box-shadow: 0px 1px 5px #00000022;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.problem .card .frame {
+  height: 200px;
+  background: transparent no-repeat center;
+  background-size: cover;
+}
+
+.problem .card:hover {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0px 3px 6px #00000044;
+          box-shadow: 0px 3px 6px #00000044;
+}
+
+/* Solution */
+.solution {
+  background: #f6f6f6;
+}
+
+.solution .img-row {
+  min-height: 300px;
+  width: calc(100% - 30px);
+  margin: auto;
+  position: relative;
+  border: 10px inset #eeeeeeaa;
+  background-image: url("../images/solution.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.solution .img-row a {
+  position: absolute;
+  bottom: -35px;
+  right: -25px;
+  display: block;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  height: -webkit-min-content;
+  height: -moz-min-content;
+  height: min-content;
+}
+
+.solution .img-row a .play {
+  font-size: 8em;
+  color: #bbd94e;
+}
+
+/* Impact */
+.impact {
+  background-color: #ffffff;
+}
+
+.impact .img-row {
+  width: calc(100% - 30px);
+  margin: auto;
+  position: relative;
+  background-image: url("../images/impact.jpg");
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 300px;
+}
+
+/* values */
+.values {
+  background: #f6f6f6;
+}
+
+.values .value .col-auto {
+  padding-top: 5px;
+  padding-right: 0;
+}
+
+.values .value .col-auto p {
+  color: #444444;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.values .value:hover .col-auto p {
+  color: #92a649;
+}
+
+.values .col-auto {
+  padding-top: 5px;
+  padding-right: 0;
+}
+
+/* about */
+.about {
+  background: #ffffff;
+}
+
+.about .person {
+  text-align: center;
+}
+
+.about .person img {
+  border-radius: 50%;
+  width: 30%;
+}
+
+.about .person .media {
+  margin: auto;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+}
+
+.about .person .media .fa {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  font-size: 25px;
+  padding: 7.5px;
+  border-radius: 50%;
+  background: #333333;
+  color: white;
+}
+
+.about .person .media .fa:hover {
+  text-decoration: none;
+}
+/*# sourceMappingURL=main.css.map */
