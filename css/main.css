@@ -98,7 +98,7 @@ nav {
 
 .showcase #scene {
   position: absolute;
-  top: 0;
+  top: auto;
   bottom: 0;
   left: 0;
   right: 0;
@@ -106,10 +106,9 @@ nav {
 }
 
 .showcase #scene img {
-  margin-left: -10%;
-  margin-top: -10%;
-  width: 120%;
-  height: 100%;
+  margin-left: -5%;
+  width: 110%;
+  height: auto;
 }
 
 /* Problem */
