@@ -14,8 +14,15 @@ $transition: 0.2s;
 
 html { 
     scroll-behavior: smooth; 
-    font-size: 1.1em;
+    font-size: 1.1rem;
     overflow-y: auto !important;
+
+    @media screen and (max-width: 1000px) {
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 600px) {
+        font-size: 0.8rem;
+    }
 }
 
 body {
@@ -31,14 +38,14 @@ body {
 
 h4 {
 
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
     color: $font-2;
 
 }
 
 p {
-    font-size: 1.1em;
+    font-size: 1.1rem;
     color: $font-3;
     font-family: 'Lato', sans-serif;
 }
@@ -61,7 +68,7 @@ a {
     border: none;
     border-radius: 0;
 
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 600;
 
     transition-duration: $transition !important;
@@ -115,7 +122,7 @@ nav {
 
             top: Max(20%, 100px) !important;
             h2 {
-                font-size: 2.5em !important;
+                font-size: 2.5rem !important;
             }
 
         }
@@ -123,19 +130,19 @@ nav {
         @media screen and (max-width: 1000px) {
 
             h2 {
-                font-size: 2em !important;
+                font-size: 2rem !important;
             }
 
             h4 { 
 
-                font-size: 1em;
+                font-size: 1rem;
 
             }
 
         }
 
         h2 {
-            font-size: 3em;
+            font-size: 3rem;
             font-family: 'Montserrat', sans-serif;
             font-weight: 900;
 
@@ -187,6 +194,17 @@ nav {
 .problem {
 
     background: $background-1;
+    overflow: visible !important;
+
+    .container {
+        overflow: visible !important;
+        .row {
+            overflow: visible !important;
+            .col-md-4 {
+                overflow: visible !important;
+            }
+        }
+    }
 
     .card {
 
@@ -199,6 +217,10 @@ nav {
             height: 200px;
             background: transparent no-repeat center;
             background-size: cover;
+        }
+
+        a {
+            margin: auto;
         }
 
         &:hover {
@@ -217,10 +239,17 @@ nav {
 .solution {
 
     background: $background-2;
+    
+    .container {
+        overflow: visible !important;
+        .row {
+            overflow: visible !important;
+        }
+    }
 
     .img-row {
 
-        min-height: 300px;
+        min-height: 400px;
         width: calc(100% - 30px);
         margin: auto;
         margin-top: 0;
@@ -233,6 +262,8 @@ nav {
 
         transition-duration: $transition;
 
+        overflow: visible !important;
+
         a {
 
             position: absolute;
@@ -244,7 +275,7 @@ nav {
             height: min-content;
 
             .play {
-                font-size: 8em;
+                font-size: 8rem;
 
                 color: $highlight-2;
                 transition-duration: $transition;

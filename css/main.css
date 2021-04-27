@@ -1,8 +1,20 @@
 /* Variables */
 html {
   scroll-behavior: smooth;
-  font-size: 1.1em;
+  font-size: 1.1rem;
   overflow-y: auto !important;
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 0.8rem;
+  }
 }
 
 body {
@@ -17,13 +29,13 @@ body {
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #444444;
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
   color: #666666;
   font-family: 'Lato', sans-serif;
 }
@@ -44,7 +56,7 @@ a {
   color: #ffffff;
   border: none;
   border-radius: 0;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   font-weight: 600;
   -webkit-transition-duration: 0.2s !important;
           transition-duration: 0.2s !important;
@@ -93,21 +105,21 @@ nav {
     top: Max(20%, 100px) !important;
   }
   .showcase .headline h2 {
-    font-size: 2.5em !important;
+    font-size: 2.5rem !important;
   }
 }
 
 @media screen and (max-width: 1000px) {
   .showcase .headline h2 {
-    font-size: 2em !important;
+    font-size: 2rem !important;
   }
   .showcase .headline h4 {
-    font-size: 1em;
+    font-size: 1rem;
   }
 }
 
 .showcase .headline h2 {
-  font-size: 3em;
+  font-size: 3rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   color: #ffffff;
@@ -149,6 +161,19 @@ nav {
 /* Problem */
 .problem {
   background: #ffffff;
+  overflow: visible !important;
+}
+
+.problem .container {
+  overflow: visible !important;
+}
+
+.problem .container .row {
+  overflow: visible !important;
+}
+
+.problem .container .row .col-md-4 {
+  overflow: visible !important;
 }
 
 .problem .card {
@@ -165,6 +190,10 @@ nav {
   background-size: cover;
 }
 
+.problem .card a {
+  margin: auto;
+}
+
 .problem .card:hover {
   margin-top: -10px;
   margin-bottom: 10px;
@@ -177,8 +206,16 @@ nav {
   background: #f6f6f6;
 }
 
+.solution .container {
+  overflow: visible !important;
+}
+
+.solution .container .row {
+  overflow: visible !important;
+}
+
 .solution .img-row {
-  min-height: 300px;
+  min-height: 400px;
   width: calc(100% - 30px);
   margin: auto;
   margin-top: 0;
@@ -189,6 +226,7 @@ nav {
      object-fit: cover;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
+  overflow: visible !important;
 }
 
 .solution .img-row a {
@@ -205,7 +243,7 @@ nav {
 }
 
 .solution .img-row a .play {
-  font-size: 8em;
+  font-size: 8rem;
   color: #92a649;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
