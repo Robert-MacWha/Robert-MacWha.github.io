@@ -63,18 +63,39 @@ nav {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #c8ddec;
+  background: #bcd4e6;
   color: #ffffff;
 }
 
 .showcase .headline {
   position: relative;
   width: 70%;
-  top: 25%;
+  top: 20%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .showcase .headline {
+    top: 15% !important;
+  }
+  .showcase .headline h2 {
+    font-size: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .showcase .headline {
+    top: 10% !important;
+  }
+  .showcase .headline h2 {
+    font-size: 2em !important;
+  }
+  .showcase .headline h4 {
+    font-size: 1em;
+  }
 }
 
 .showcase .headline h2 {
@@ -156,12 +177,14 @@ nav {
   background-image: url("../images/solution.jpg");
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .solution .img-row a {
   position: absolute;
-  bottom: -35px;
-  right: -25px;
+  bottom: -45px;
+  right: -35px;
   display: block;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -173,7 +196,13 @@ nav {
 
 .solution .img-row a .play {
   font-size: 8em;
-  color: #bbd94e;
+  color: #92a649;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.solution .img-row a .play:hover {
+  color: #bde03f;
 }
 
 /* Impact */
@@ -208,7 +237,7 @@ nav {
 }
 
 .values .value:hover .col-auto p {
-  color: #bbd94e;
+  color: #bde03f;
 }
 
 .values .col-auto {
@@ -219,6 +248,10 @@ nav {
 /* about */
 .about {
   background: #ffffff;
+}
+
+.about p {
+  text-align: center;
 }
 
 .about .person {
@@ -252,7 +285,7 @@ nav {
 }
 
 .about .person .media .fa:hover {
-  background: #bbd94e;
+  background: #bde03f;
   text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
