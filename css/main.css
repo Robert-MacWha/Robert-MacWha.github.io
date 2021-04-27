@@ -90,7 +90,7 @@ nav {
 
 @media screen and (max-width: 1200px) {
   .showcase .headline {
-    top: 15% !important;
+    top: Max(20%, 100px) !important;
   }
   .showcase .headline h2 {
     font-size: 2.5em !important;
@@ -98,9 +98,6 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .showcase .headline {
-    top: 10% !important;
-  }
   .showcase .headline h2 {
     font-size: 2em !important;
   }
@@ -131,7 +128,7 @@ nav {
 .showcase #scene {
   position: absolute;
   top: 20%;
-  bottom: -37%;
+  bottom: -40%;
   left: 0;
   right: 0;
   overflow: hidden;

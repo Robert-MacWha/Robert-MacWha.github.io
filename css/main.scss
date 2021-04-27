@@ -113,7 +113,7 @@ nav {
 
         @media screen and (max-width: 1200px) {
 
-            top: 15% !important;
+            top: Max(20%, 100px) !important;
             h2 {
                 font-size: 2.5em !important;
             }
@@ -122,7 +122,6 @@ nav {
 
         @media screen and (max-width: 1000px) {
 
-            top: 10% !important;
             h2 {
                 font-size: 2em !important;
             }
@@ -160,7 +159,7 @@ nav {
 
         position: absolute;
         top: 20%;
-        bottom: -37%;
+        bottom: -40%;
         left: 0;
         right: 0;
 
