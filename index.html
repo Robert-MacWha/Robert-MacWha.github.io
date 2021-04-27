@@ -55,10 +55,10 @@
         <!--Parallax-->
         <div id="scene">
 
-            <div style="background-image: url(./images/showcase/4.png);"></div>
-            <div style="background-image: url(./images/showcase/3.png);"></div>
-            <div style="background-image: url(./images/showcase/2.png);"></div>
-            <div style="background-image: url(./images/showcase/1.png);"></div>
+            <div class="rellax" style="background-image: url(./images/showcase/4.png);" data-rellax-speed="-2"></div>
+            <div class="rellax" style="background-image: url(./images/showcase/3.png);" data-rellax-speed="2"></div>
+            <div class="rellax" style="background-image: url(./images/showcase/2.png);" data-rellax-speed="6"></div>
+            <div class="rellax" style="background-image: url(./images/showcase/1.png);" data-rellax-speed="10"></div>
 
         </div>
 
@@ -69,9 +69,6 @@
             <h2>
                 BUILDINGS THAT PASSIVELY ABSORB&nbspCO<sub>2</sub>
             </h2>
-            <h4>
-                Using Gene editing to insert bacteria into concrete that passively absorb CO<sub>2</sub> from our atmosphere.
-            </h4>
             <a href="#solution" class="btn hvr-underline-from-center">See our plans</a>
 
         </div>
@@ -348,6 +345,19 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <script>
+        // Also can pass in optional settings block
+        var rellax = new Rellax('.rellax', {
+          speed: -2,
+          center: false,
+          wrapper: null,
+          round: true,
+          vertical: true,
+          horizontal: false
+        });
+      </script>
 
 </body>
 </html>
