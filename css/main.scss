@@ -52,6 +52,17 @@ p {
 
 a {
     font-family: 'Lato', sans-serif;
+
+    color: $highlight-2;
+
+    &:before {
+        background-color: $highlight-3 !important;
+    }
+
+    &:hover {
+        text-decoration: none;
+        color: $highlight-2;
+    }
 }
 
 .title {
@@ -85,6 +96,10 @@ a {
         
     }
 
+}
+
+.dark-bg {
+    background-color: $background-2;
 }
 
 /* Header */
@@ -193,7 +208,6 @@ nav {
 /* Problem */
 .problem {
 
-    background: $background-1;
     overflow: visible !important;
 
     .container {
@@ -237,8 +251,6 @@ nav {
 
 /* Solution */
 .solution {
-
-    background: $background-2;
     
     .container {
         overflow: visible !important;
@@ -294,8 +306,6 @@ nav {
 /* Impact */
 .impact {
 
-    background-color: $background-1;
-
     .img-row {
 
         width: calc(100% - 30px);
@@ -311,51 +321,8 @@ nav {
 
 }
 
-/* values */
-.values {
-
-    background: $background-2;
-
-    .value {
-
-        .col-auto {
-            
-            padding-top: 5px;
-            padding-right: 0;
-
-            p {
-
-                color: $highlight-3;
-                transition-duration: $transition;
-
-            }
-        }
-
-        &:hover {
-
-            .col-auto p {
-
-                color: $highlight-1;
-
-            }
-
-        }
-
-    }
-
-    .col-auto {
-        
-        padding-top: 5px;
-        padding-right: 0;
-
-    }
-
-}
-
 /* about */
 .about {
-
-    background: $background-1;
 
     p {
 
@@ -395,6 +362,12 @@ nav {
                 color: white;
 
                 transition-duration: $transition;
+
+                &:before {
+
+                    background-color: transparent !important;
+
+                }
 
                 &:hover {
 
