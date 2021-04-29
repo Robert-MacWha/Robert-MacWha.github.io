@@ -231,8 +231,8 @@ nav {
   position: relative;
   border: 10px inset #eeeeeeaa;
   background-image: url("../images/solution.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  background-position: center;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
   overflow: visible !important;
@@ -253,13 +253,24 @@ nav {
 
 .solution .img-row a .play {
   font-size: 8rem;
-  color: #92a649;
+  color: #bde03f;
   -webkit-transition-duration: 0.2s;
           transition-duration: 0.2s;
 }
 
 .solution .img-row a .play:hover {
-  color: #bde03f;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.technical .img-row {
+  width: calc(100% - 30px);
+  margin: auto;
+  position: relative;
+  background-image: url("../images/technical.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
 }
 
 /* Impact */
@@ -268,8 +279,8 @@ nav {
   margin: auto;
   position: relative;
   background-image: url("../images/impact.jpg");
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-size: cover;
+  background-position: center;
   min-height: 300px;
 }
 

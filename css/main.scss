@@ -269,8 +269,9 @@ nav {
         position: relative;
 
         border: 10px inset #eeeeeeaa;
-        background-image: url('../images/solution.jpg'); 
-        object-fit: cover;
+        background-image: url('../images/solution.jpg');
+        background-size: cover;
+        background-position: center;
 
         transition-duration: $transition;
 
@@ -289,11 +290,11 @@ nav {
             .play {
                 font-size: 8rem;
 
-                color: $highlight-2;
+                color: $highlight-1;
                 transition-duration: $transition;
 
                 &:hover {
-                    color: $highlight-1;
+                    transform: scale(1.1);
                 }
 
             }
@@ -301,6 +302,24 @@ nav {
         }
     }
 
+}
+
+.technical {
+
+    .img-row {
+
+        width: calc(100% - 30px);
+        margin: auto;
+
+        position: relative;
+
+        background-image: url('../images/technical.jpg'); 
+        background-size: cover;
+        background-position: center;
+
+        min-height: 300px;
+    }
+    
 }
 
 /* Impact */
@@ -314,7 +333,8 @@ nav {
         position: relative;
 
         background-image: url('../images/impact.jpg'); 
-        object-fit: cover;
+        background-size: cover;
+        background-position: center;
 
         min-height: 300px;
     }
