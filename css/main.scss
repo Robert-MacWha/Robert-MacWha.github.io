@@ -75,14 +75,14 @@ a {
 .btn {
 
     background: $highlight-2;
-    color: #ffffff;
+    color: #ffffff !important;
     border: none;
     border-radius: 0;
 
     font-size: 1.2rem;
     font-weight: 600;
 
-    transition-duration: $transition !important;
+    transition-duration: $transition;
 
     &:before {
 

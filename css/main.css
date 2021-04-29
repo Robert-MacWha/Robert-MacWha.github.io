@@ -63,13 +63,13 @@ a:hover {
 
 .btn {
   background: #92a649;
-  color: #ffffff;
+  color: #ffffff !important;
   border: none;
   border-radius: 0;
   font-size: 1.2rem;
   font-weight: 600;
-  -webkit-transition-duration: 0.2s !important;
-          transition-duration: 0.2s !important;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
 }
 
 .btn:before {
